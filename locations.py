@@ -24,4 +24,4 @@ def closest_locations(coordinates, locations, count):
     """
     tree = spatial.KDTree(locations)
     dd, closest_locations = tree.query([coordinates])
-    return closest_index[0:count]
+    return closest_locations[0:count]
