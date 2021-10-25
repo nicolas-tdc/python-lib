@@ -1,3 +1,5 @@
+"""Location related functions library"""
+
 from geopy.geocoders import Nominatim
 
 def coordinates_from_address(address):
