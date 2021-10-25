@@ -2,7 +2,8 @@ from geopy.geocoders import Nominatim
 
 def coordinates_from_address(address):
     """
-    :return: set - Coordinates for a given address or raise ValueError if address not found
+    :param address: String
+    :return: Set - Coordinates for a given address or raise ValueError if address not found
     """
     geolocator = Nominatim(user_agent="ntdc")
 
